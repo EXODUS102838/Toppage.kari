@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body{
+	background-color: #000000;
+
+}
+header div{
+	position: relative;
+	color: #ffffff;
+	font-family: "pigmo-00";
+	-webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+	margin-top: 30px;
+	margin-right: 50px;
+	font-size: 10em;
+	float: right;
+	z-index: 3;
+}
+
+nav ul{
+	position: relative;
+	display: flex;
+	text-align: center;
+	color: #ffffff;
+	list-style: none;
+}
+
+nav ul li{
+	font-family: "Mamelon";
+	border-left: 1px solid #ffffff;
+	margin-left: 10px;
+	width: 400px;
+	font-size: 30px;
+
+}
+nav ul li:hover{
+	background-color: #4682b4;
+}
+
+@keyframes FadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#main {
+	background-image: url(images/alexandre-chambon-zxmSX2-GQBc-unsplash.jpg); /*image from Unsplash*/
+	background-position: center center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+ 	height: 100vh;
+	animation-duration: 1s;
+	animation-name: FadeIn;
+	filter: contrast(150%);
+	filter: saturate(90%);
+	background-position: cover;
+
+
+}
+
+@keyframes FontSlide{
+	0%{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100%{
+		opacity: 1;
+	}
+}
+h2{
+	padding-right: 30px;
+	font-family: "Mamelon";
+	text-decoration: bold;
+	-webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+	position: absolute;
+ 	font-size:50px;
+ 	color: #696969;
+  	font-weight: bold;
+  	position: relative;
+	padding-top: 60px;
+	padding-left:50px;
+  	z-index: 1;
+	animation-duration: 2.5s;
+	animation-name: FontSlide;
+}
+
+
+
+footer{
+	height: 50px;
+	position: relative;
+}
+footer p{
+
+	color: #ffffff;
+	font-family: "century";
+	font-size: 1.5em;
+	text-align: center;
+}
